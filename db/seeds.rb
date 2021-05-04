@@ -49,8 +49,10 @@ dogs = [
   },
 ]
 
+eunice = User.create!(name: "Eunice", email: "e@e.com", password: "abc123")
+
 dogs.each do |dog|
-  dog = Dog.find_or_create_by(name: dog[:name], description: dog[:description])
+  dog = Dog.find_or_create_by(name: dog[:name], description: dog[:description], user_id[:eunice.id])
   directory_name = File.join(Rails.root, 'db', 'seed', "#{dog[:name].downcase}", "*")
 
   Dir.glob(directory_name).each do |filename|

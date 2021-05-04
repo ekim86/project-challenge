@@ -1,5 +1,8 @@
 {
   "name": "dog-profile",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "owl.carousel": "^2.3.4"
+  }
 }
